@@ -45,42 +45,7 @@ public class ListaDeObjetos {
                     break;
                 }
             }
-            
         } while (opcao != 0);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*listaDeNomes.add(leitor.nextLine());
-        listaDeNomes.add(leitor.nextLine());
-        listaDeNomes.add(leitor.nextLine());
-        listaDeNomes.add(leitor.nextLine());
-        
-        System.out.println("Dados do vetor");
-        
-        int i = 0;
-        for (String nome : listaDeNomes) {
-            System.out.println(i+" - "+nome);
-            i++;
-        }
-        
-        System.out.println("Informe a posição para excluir:");
-        int posicao = leitor.nextInt();
-        listaDeNomes.remove(posicao);
-        
-        System.out.println("Dados do vetor");
-        
-        i = 0;
-        for (String nome : listaDeNomes) {
-            System.out.println(i+" - "+nome);
-            i++;
-        }*/
     }
     
     public static void adicionar(){
