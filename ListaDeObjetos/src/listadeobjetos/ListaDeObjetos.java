@@ -21,8 +21,6 @@ public class ListaDeObjetos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
         int opcao;
         String menu = "Selecione uma opção\n\n";
         menu += "1 - Adicionar nome\n";
@@ -42,6 +40,7 @@ public class ListaDeObjetos {
                     break;
                 }
                 case 3:{
+                    remover();
                     break;
                 }
             }
@@ -60,6 +59,12 @@ public class ListaDeObjetos {
             System.out.println(i+" - "+nome);
             i++;
         }
+    }
+    
+    public static void remover(){
+        System.out.println("Informe o nome:");
+        String nome = leitor.next();
+        listaDeNomes.remove(nome);
     }
     
 }
