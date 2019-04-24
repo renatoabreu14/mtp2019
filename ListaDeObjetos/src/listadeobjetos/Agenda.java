@@ -71,13 +71,15 @@ public class Agenda {
         leitor.nextLine();
         System.out.println("Informe o Nome:");
         contato.setNome(leitor.nextLine());
-        int indice = -1;
+        agenda.remove(agenda.indexOf(contato));
+        
+        /*int indice = -1;
         for (int i = 0; i < agenda.size(); i++) {
             if (agenda.get(i).getNome().equals(contato.getNome())){
                 indice = i;
             }
         }
-        agenda.remove(indice);
+        agenda.remove(indice);*/
                 
     }
     

@@ -38,5 +38,18 @@ public class Contato {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Contato){
+            Contato contato = (Contato)obj;
+            if (contato.getNome().equals(this.getNome())){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
     
 }
